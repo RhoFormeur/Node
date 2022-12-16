@@ -1,0 +1,11 @@
+<h1>Titre page home</h1>
+
+{{!--
+    Boucle effectuer sur les data envoyer par le res.render (db)
+    la spécificité ici est que l'on utilise un helper (limit)
+    cela nous permet de limiter la longueur de notre tableau
+--}}
+{{#each (limit db 3)}}
+    {{!-- Et ici nous exploitons les Objets contenu dans le tableau --}}
+    <p>{{@index}} | <b>Titre:</b> {{this.titre}} & <b>Price:</b> {{this.price}}</p>
+{{/each}}

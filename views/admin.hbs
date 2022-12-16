@@ -1,0 +1,7 @@
+<h1>ADMIN PAGE</h1>
+
+{{!-- Boucl effectuer sur les data envoyer par le res.render --}}
+{{#each db}}
+    {{!-- Et ici nous exploitons les Objets contenu dans le tableau --}}
+    <p>{{@index}} | <b>Titre:</b> {{this.titre}} & <b>Price:</b> {{this.price}}</p>
+{{/each}}
