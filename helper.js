@@ -1,4 +1,6 @@
-// Limiter la longueur d'un tableau
-exports.limit = (ar, max) => {
-    return ar.slice(0, max);
+module.exports = {
+    limit: function (ar, max) {
+        let db = ar.slice(0, max);
+        return db;
+    }
 }
